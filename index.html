@@ -19,10 +19,15 @@
     }
   </style>
   </head>
-
   <body>    
-    <header>
+    <header>  
 <h1>portfolio de Iker</h1>
+<iframe style="width: 100%; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/3nYLTiY5skU?si=XTlGAQ4fy1SjjOYk"
+ title="YouTube video player" 
+ frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin"
+   allowfullscreen></iframe>
 <nav>
   <a href="#experiencia">Experiencia</a>
   <br>
@@ -33,9 +38,9 @@
   rel="noreferrer"
   >instagram</a>
   <br>
-
 </nav>
 </header>
+<video controls  src="images/sample_640x360.mp4"></video>
 <main>
 <p>comenzando en el mundo de la <strong>Programacion</strong></p>
 <h2 id="experiencia">Experiencia</h2>
@@ -85,7 +90,9 @@ title="Alto building"
 <section>
   <article>
     <header>
-      <h4>Sitio web corporativo</h4>
+      <h4>La pagina de Tesla</h4>
+      <img style="width:50% ; aspect-ratio: 1891/867;" 
+      src="images/Captura de pantalla 2025-02-23 105801.png" alt="Captura de pantalla de la pagina de Tesla">
     </header>
       <p>
         Desarrollo de un sitio web corporativo
@@ -95,6 +102,18 @@ title="Alto building"
     </footer>
   </article>
 </section>
+
+<SECtion>
+  <h2>Preguntas Frecuentes</h2>
+
+  <details>
+    <summary>¿Que estudios tienes?</summary>
+    <p>Estudie Programacion en la UTN FRC</p>
+  </details>
+
+  <details><summary>¿Cuales son tus hobbies?</summary>
+    <p>Me gusta el futbol</p></details>
+</SECtion>
 <section>
   <h2>Formulario de Contacto</h2>
   <form method="post" action="/">
@@ -125,6 +144,34 @@ title="Alto building"
     placeholder="" required>
   </label>
 </div>
+</fieldset>
+<fieldset>
+  <legend>Otros</legend>
+  <div>
+    <label for="why">¿Por Que me quieres contactar?</label>
+    <select name="why" id="why">
+      <option value="1">Duda</option>
+      <option value="2">Trabajo</option>
+      <option value="3">Más Info</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="terms"> ¿Aceptas los terminos y condiciones?</label>
+    <input type="checkbox" name="terms" id="terms" required>
+  </div>
+
+  <div>
+    <datalist id="languages">
+      <option value="JavaScript"></option>
+      <option value="Python"></option>
+      <option value="C#"></option>
+      <option value="Java"></option>
+    </datalist>
+    <label>¿Con que lenguaje te ayudo?  
+      <input list="languages" name="languages">
+    </label>
+  </div>
 </fieldset>
 <Input type="submit" value="Enviar Contacto">
 
